@@ -73,8 +73,8 @@ func main() {
 	i *= 2                   // 乗算して代入（i = i * 2 と同じ）
 	fmt.Printf("i: %v\n", i) // 出力例: "i: 6"
 
-	// ポインタの基本
-	var ui1 uint16                                  // uint16型の変数を宣言
+	// ポインタの基本　ポインタは「データの住所」を扱う仕組み
+	var ui1 uint16                                  // uint16型の変数を宣言　必ず宣言する必要がある
 	fmt.Printf("memory address of ui1: %p\n", &ui1) // ui1のメモリアドレスを出力（&は参照演算子）
 	// 出力例: "memory address of ui1: 0xc000018390"
 	var ui2 uint16
@@ -92,7 +92,7 @@ func main() {
 	*p1 = 1                               // ポインタ経由で値を変更
 	fmt.Printf("value of ui1: %v\n", ui1) // 出力例: "value of ui1: 1"
 
-	// ポインタのポインタ
+	// ポインタのポインタ　ダブルポインタ　アスタリスク二つで表現
 	var pp1 **uint16 = &p1                                     // ポインタのポインタを宣言と初期化
 	fmt.Printf("value of pp1: %v\n", pp1)                      // 出力例: "value of pp1: 0xc00000e028"
 	fmt.Printf("memory address of pp1: %p\n", &pp1)            // 出力例: "memory address of pp1: 0xc00000e030"
