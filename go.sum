@@ -1,3 +1,10 @@
+// go.sum はパッケージの整合性を検証するためのファイルです。
+// 役割：
+// - 依存パッケージの正確なバージョンとハッシュ値を記録
+// - ビルド時にパッケージの整合性を検証
+// - 手動で編集せず、go mod コマンドで自動管理される
+// - npm の package-lock.json に相当
+
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
