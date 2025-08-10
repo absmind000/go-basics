@@ -137,7 +137,7 @@ func main() {
 	fmt.Printf("%v %v\n", v, ok)
 	// 出力: 0 false
 
-	v, ok = m2["C"] // 要素の存在確認（値が0の場合）
+	v, ok = m2["C"] // 要素の存在確認（値が0の場合）2回目は既存の変数を再利用するので = を使用
 	fmt.Printf("%v %v\n", v, ok)
 	// 出力: 0 true
 
